@@ -1,3 +1,6 @@
+extern crate bitcoin;
+extern crate btc_transaction_utils;
+
 use bitcoin::{
     blockdata::opcodes::all::OP_RETURN,
     blockdata::script::{Builder, Script},
@@ -9,7 +12,7 @@ use btc_transaction_utils::{
     test_data::{secp_gen_keypair_with_rng, btc_tx_from_hex},
     TxInRef
 };
-use rand::prelude::*;
+//use rand::prelude::*;
 
 fn main() {
     // Take a transaction with the unspent P2WPK output.
@@ -23,6 +26,7 @@ fn main() {
          9bca7caddb9a6adb0a3440012103150514f05f3e3f40c7b404b16f8a09c2c71ba\
          d3ba8da5dd1e411a7069cc080a004b91300",
     );
+    /*
     // Take the corresponding key pair.
     let mut rng = thread_rng();
     let keypair = secp_gen_keypair_with_rng(&mut rng, Network::Testnet);
@@ -58,4 +62,6 @@ fn main() {
         .unwrap();
     // Finalize the transaction.
     signer.spend_input(&mut transaction.input[0], signature);
+    */
+    println!("tx is {:?}", prev_tx.txid())
 }
