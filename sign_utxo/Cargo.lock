@@ -43,7 +43,7 @@ dependencies = [
  "bech32",
  "bitcoin_hashes",
  "byteorder",
- "hex",
+ "hex 0.3.2",
  "secp256k1",
 ]
 
@@ -56,7 +56,7 @@ dependencies = [
  "bech32",
  "bitcoin_hashes",
  "byteorder",
- "hex",
+ "hex 0.3.2",
  "secp256k1",
 ]
 
@@ -82,7 +82,7 @@ dependencies = [
  "bitcoin_hashes",
  "failure",
  "failure_derive",
- "hex",
+ "hex 0.3.2",
  "rand",
  "secp256k1",
  "serde",
@@ -149,6 +149,12 @@ name = "hex"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "805026a5d0141ffc30abb3be3173848ad46a1b1664fe632428479619a3644d77"
+
+[[package]]
+name = "hex"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "023b39be39e3a2da62a94feb433e91e8bcd37676fbc8bea371daf52b7a769a3e"
 
 [[package]]
 name = "libc"
@@ -325,7 +331,10 @@ name = "sign_utxo"
 version = "0.1.0"
 dependencies = [
  "bitcoin 0.21.0",
+ "bitcoin_hashes",
  "btc-transaction-utils",
+ "hex 0.4.0",
+ "secp256k1",
 ]
 
 [[package]]

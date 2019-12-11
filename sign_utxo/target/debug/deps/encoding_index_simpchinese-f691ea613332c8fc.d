@@ -1,0 +1,9 @@
+/Users/taharahiroki/Documents/GitHub/Enigma_Bitcoin_proto/sign_utxo/target/debug/deps/encoding_index_simpchinese-f691ea613332c8fc.rmeta: /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/lib.rs /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030.rs /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs
+
+/Users/taharahiroki/Documents/GitHub/Enigma_Bitcoin_proto/sign_utxo/target/debug/deps/libencoding_index_simpchinese-f691ea613332c8fc.rlib: /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/lib.rs /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030.rs /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs
+
+/Users/taharahiroki/Documents/GitHub/Enigma_Bitcoin_proto/sign_utxo/target/debug/deps/encoding_index_simpchinese-f691ea613332c8fc.d: /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/lib.rs /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030.rs /Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs
+
+/Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/lib.rs:
+/Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030.rs:
+/Users/taharahiroki/.cargo/registry/src/github.com-1ecc6299db9ec823/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs:

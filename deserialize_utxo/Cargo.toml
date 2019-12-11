@@ -1,0 +1,11 @@
+[package]
+name = "sign_utxo"
+version = "0.1.0"
+authors = ["NamahageTahara <0802creo@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitcoin = "0.21.0"
+hex = "0.4.0"
