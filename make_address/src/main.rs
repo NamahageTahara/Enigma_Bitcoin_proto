@@ -17,12 +17,12 @@ fn main() {
     };
     let private_key = key::PrivateKey {
         compressed: true,
-        network: Network::Bitcoin,
+        network: Network::Testnet,
         key: keys.0,
     };
 
      // Generate pay-to-pubkey-hash address
-    let address = Address::p2pkh(&public_key, Network::Bitcoin);
+    let address = Address::p2pkh(&public_key, Network::Testnet);
     println!("Your Address is {:}", address );
     println!("Your PKey is {:}", private_key);
 }

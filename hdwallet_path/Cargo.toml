@@ -1,0 +1,14 @@
+[package]
+name = "hdwallet_path"
+version = "0.1.0"
+authors = ["NamahageTahara <0802creo@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitcoin = "0.21.0"
+secp256k1 = "0.15.0"
+serde = { version = "^1.0.101", features = ["derive"] }
+serde_json = "^1.0.41"
+hex = "0.4.0"
