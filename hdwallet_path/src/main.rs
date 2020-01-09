@@ -35,7 +35,6 @@ fn main() {
     let derive_path = DerivationPath::from_str(&path).unwrap();
 
     let privkey = sk.derive_priv(&secp, &derive_path).unwrap();
-    
     let pubkey = ExtendedPubKey::from_private(&secp, &privkey);
     
     let address = Address::p2pkh(&pubkey.public_key, Network::Testnet);
