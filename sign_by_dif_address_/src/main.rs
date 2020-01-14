@@ -20,10 +20,11 @@ fn main() {
     //設定
     let secp = Secp256k1::new();
     let network = Network::Testnet;
-    let mut address_len = 100;
+    let mut address_len = 150;
     //seedからmasterkey、path生成してchild keyとscript_pubkey
     let seed = hex::decode("000102030405060a08090a0b0c0d0e0f").unwrap();
     let sk = ExtendedPrivKey::new_master(network, &seed).unwrap();
+    println!("secret key is {:} \n", sk.to_string());
     
     //自分のアドレス
     let derive_path1 = get_path(address_len);
@@ -31,13 +32,15 @@ fn main() {
     let pubkey = ExtendedPubKey::from_private(&secp, &privkey);
     let address = Address::p2pkh(&pubkey.public_key, Network::Testnet);
     let script_pubkey = address.script_pubkey();
-    address_len += 1;
+    println!("my first address is {:} \n", address);
+    address_len = 151;
 
     let derive_path2 = get_path(address_len);
-    let privkey2 = sk.derive_priv(&secp, &derive_path1).unwrap();
-    let pubkey2 = ExtendedPubKey::from_private(&secp, &privkey);
-    let address2 = Address::p2pkh(&pubkey.public_key, Network::Testnet);
+    let privkey2 = sk.derive_priv(&secp, &derive_path2).unwrap();
+    let pubkey2 = ExtendedPubKey::from_private(&secp, &privkey2);
+    let address2 = Address::p2pkh(&pubkey2.public_key, Network::Testnet);
     let script_pubkey2 = address.script_pubkey();
+    println!("my second address is {:} \n", address2);
 
     //送り先のアドレス設定
     let derive_path2 = get_path(address_len);
